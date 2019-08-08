@@ -80,7 +80,9 @@ header {
     line-height: 0.75;
     display: flex;
     justify-content: space-evenly; 
-    justify-content: center;
+    /* border: 1px solid black;  */
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 header .title {
@@ -88,6 +90,8 @@ header .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
 }
 
 header .title button {
@@ -99,6 +103,7 @@ header img {
     display: flex;
     justify-content: start;
     width: 35%;
+    /* border: 1px solid blue; */
 }
 
 /* header {
@@ -132,11 +137,13 @@ header img {
 }
 .middle-img {
     margin: 30px 0px;
+    width: 100%;
 }
 
 .bottom-content {
     width: 876px;
     display: flex;
+    width: 100%;
 }
 
 .bottom-content div {
@@ -174,6 +181,7 @@ footer{
     justify-content: space-around;
     flex-direction: column;
 
+
     
 }
 
@@ -187,14 +195,19 @@ footer{
 .firstrow .digital-design{
     width: 45%;
     border: 1px solid black;
-    background:snow;
+    background:#f4f3f4;
+    padding:10px;
 }
 .firstrow .uxui{
     width: 45%;
     border: 1px solid black;
-    background:snow;
+    background: #f4f3f4;
 }
 
+button{
+    margin-top: 10px;
+
+}
 .secondrow{
     display: flex;
     justify-content: space-between;
@@ -204,13 +217,13 @@ footer{
 
 .secondrow .digital-marketing{
     border: 1px solid black;
-    background:snow;
+    background:#f4f3f4;
     padding: 2px;
     width: 45%;
 }
 .secondrow .web-development{
     border: 1px solid black;
-    background:snow;
+    background:#f4f3f4;
     padding: 2px;
     width: 45%;
 }
@@ -219,18 +232,20 @@ footer{
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 70px;
+    border-bottom: 1px solid black; 
+    padding: 20px;
 }
 
-.thirdrow .ios{
-    border: 1px solid black;
-    background:snow;
+.thirdrow .ios{ 
+    background:#f4f3f4;
     padding: 2px;
     width: 45%;
+    border: 1px solid black; 
 }
 
 .thirdrow .android{
     border: 1px solid black;
-    background:snow;
+    background:#f4f3f4;
     padding: 2px;
     width: 45%;
 }
