@@ -65,9 +65,6 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* body{
-    border: 1px solid blue;
-} */
 
 nav {
     display: flex; 
@@ -80,10 +77,10 @@ nav a {
 }
 
 header {
+    line-height: 0.75;
     display: flex;
     justify-content: space-evenly; 
     justify-content: center;
-    width: 100%;
 }
 
 header .title {
@@ -91,7 +88,6 @@ header .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: auto;
 }
 
 header .title button {
@@ -104,6 +100,32 @@ header img {
     justify-content: start;
     width: 35%;
 }
+
+/* header {
+    line-height: 0.75;
+    margin: 50px 0px 50px 100px;
+    width: 876px;
+} */
+
+/* header .title {
+    font-size: 68px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 15px;
+    margin-right: 100px;
+}
+
+header .title button {
+    border: 1px solid black;
+    margin-top: 0px;
+    padding: 6px 40px;
+}
+
+header img {
+    display: inline-block;
+    width: 35%;
+} */
+
 .top-content {
     width: 100%;
     display: flex;
@@ -130,17 +152,109 @@ header img {
 }
 
 body { /*centers the website */
-    width: 876px;
     margin: 0 auto;
+    /* border: 1px solid blue; */
+    width: 90%;
 }
 
-footer {
+footer{
     margin-top: 50px;
     text-align: center;
 } 
 
+.service {
+    border-bottom: 1px solid black; 
+    padding: 20px;
+}
 
-.firstrow{
+
+
+.whole-box{
     display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
     
+}
+
+.firstrow{ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.firstrow .digital-design{
+    width: 45%;
+    border: 1px solid black;
+    background:snow;
+}
+.firstrow .uxui{
+    width: 45%;
+    border: 1px solid black;
+    background:snow;
+}
+
+.secondrow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.secondrow .digital-marketing{
+    border: 1px solid black;
+    background:snow;
+    padding: 2px;
+    width: 45%;
+}
+.secondrow .web-development{
+    border: 1px solid black;
+    background:snow;
+    padding: 2px;
+    width: 45%;
+}
+.thirdrow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.thirdrow .ios{
+    border: 1px solid black;
+    background:snow;
+    padding: 2px;
+    width: 45%;
+}
+
+.thirdrow .android{
+    border: 1px solid black;
+    background:snow;
+    padding: 2px;
+    width: 45%;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.facts{
+    width: 50%;
+    padding: 10px;
+}
+ul{
+    margin: 20px;
+    list-style-type: square;
+}
+li{
+    padding: 10px;
+}
+
+#image{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+
 }
