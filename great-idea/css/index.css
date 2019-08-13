@@ -64,16 +64,32 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
+body{
+    /* border: 1px solid red; */
+}
 
 nav {
     display: flex; 
     justify-content: space-evenly;
+    /* border: 1px solid red; */
 }
-
+.navTop{
+    display: flex; 
+    justify-content: space-evenly;
+    color: grey; 
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.serviceTop{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
 nav a {
     text-decoration: none;
     color: grey;
+    /* border: 1px solid black; */
 }
 
 header {
@@ -94,43 +110,12 @@ header .title {
     /* border: 1px solid red; */
 }
 
-header .title button {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-}
 header img {
     display: flex;
     justify-content: start;
     width: 35%;
     /* border: 1px solid blue; */
 }
-
-/* header {
-    line-height: 0.75;
-    margin: 50px 0px 50px 100px;
-    width: 876px;
-} */
-
-/* header .title {
-    font-size: 68px;
-    text-align: center;
-    display: inline-block;
-    margin: 0px 15px;
-    margin-right: 100px;
-}
-
-header .title button {
-    border: 1px solid black;
-    margin-top: 0px;
-    padding: 6px 40px;
-}
-
-header img {
-    display: inline-block;
-    width: 35%;
-} */
-
 .top-content {
     width: 100%;
     display: flex;
@@ -171,24 +156,19 @@ footer{
 
 .service {
     border-bottom: 1px solid black; 
-    padding: 20px;
 }
-
-
 
 .whole-box{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
-
-    
+    border-bottom: 1px solid black;
 }
 
 .firstrow{ 
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -196,7 +176,6 @@ footer{
     width: 45%;
     border: 1px solid black;
     background:#f4f3f4;
-    padding:10px;
 }
 .firstrow .uxui{
     width: 45%;
@@ -206,6 +185,9 @@ footer{
 
 button{
     margin-top: 10px;
+    border: 1px solid black;
+    background-color: white;
+
 
 }
 .secondrow{
@@ -218,13 +200,11 @@ button{
 .secondrow .digital-marketing{
     border: 1px solid black;
     background:#f4f3f4;
-    padding: 2px;
     width: 45%;
 }
 .secondrow .web-development{
     border: 1px solid black;
     background:#f4f3f4;
-    padding: 2px;
     width: 45%;
 }
 .thirdrow{
@@ -232,13 +212,10 @@ button{
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 70px;
-    border-bottom: 1px solid black; 
-    padding: 20px;
 }
 
 .thirdrow .ios{ 
     background:#f4f3f4;
-    padding: 2px;
     width: 45%;
     border: 1px solid black; 
 }
@@ -246,8 +223,8 @@ button{
 .thirdrow .android{
     border: 1px solid black;
     background:#f4f3f4;
-    padding: 2px;
     width: 45%;
+
 }
 
 .footer{
@@ -270,6 +247,132 @@ li{
 #image{
     display: flex;
     justify-content: flex-end;
-    width: 70%;
-
+    width: 100%;   
+    height: auto;
 }
+
+.services-header-img{
+    width:100%;
+    height:auto;
+}
+/***********************TABLET VIEW STARTS HERE****************************/
+@media screen and (max-width: 800px){
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .navTop{
+    display: flex; 
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+    .logo{
+        width: 40%;
+        /* border: 1px solid orange; */
+        padding: 20px 30px;
+        margin-left: 200px;
+        margin-right: 150px;
+    }
+    header img{
+        /* border: 1px solid blue; */
+        display: none;
+        
+    }
+    .title{
+        width: 100%;
+        /* border: 1px solid red; */
+        padding: 50px;
+    }
+    /* #image{
+        width:100%;
+        height:auto;
+    } */
+
+  }
+/**************************MOBILE VIEW STARTS HERE*************************/
+@media screen and (max-width: 500px){
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        /* border-bottom: 1px solid black; */
+    }
+    nav a{
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+
+    .navTop{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* border: 1px solid black; */
+        width: 100%;
+        /* padding: 20px; */
+    }
+
+    .logo{
+        width: 50%;
+        /* border: 1px solid orange; */
+        padding: 20px 30px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    .top-content .features{
+        padding: 20px 0;
+        /* border: 1px solid black; */
+    }
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* border: 1px solid black; */
+    }
+    .bottom-content .services{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .bottom-content .products{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content .vision{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .services-header-img{
+        width:100%;
+        height:auto;
+    }
+    #image .services-info-img{
+        width: 100%;
+        height: 40%;
+        border: 1px solid red;
+    }
+    .serviceTop{
+        border: 1px solid blue;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
